@@ -1,0 +1,12 @@
+{% extends 'shortcut.html' %}
+
+{% block content %}
+
+{% for blog in object_list %}
+<div class="post-entry">
+<h2><a href="{% url 'blogdetails' blog.pk %}">{{ blog.title }}</a></h2>
+<p>{{ blog.body }}</p>
+</div>
+{% endfor %}
+
+{% endblock content %}
