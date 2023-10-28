@@ -7,4 +7,7 @@
     <p>{{ blog.body }}</p>
 </div>
 
+<p><a href="{% url 'blogupdate' blog.pk %}">+ Update Blog Post</a></p>
+<p><a href="{% url 'blogdelete' blog.pk %}">+ Delete Blog</a></p>
+
 {% endblock content %}
